@@ -5,9 +5,12 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+
   body {
     cursor: arrow;
+    background-color: ${({ theme }) => theme.background};
   }
+
   body,
   input,
   textarea,
@@ -15,9 +18,11 @@ export const GlobalStyle = createGlobalStyle`
   button {
     font: 400 1rem 'Poppins', sans-serif;
   }
+
   button {
     cursor: pointer;
   }
+
   a {
     color: inherit;
     text-decoration: none;
